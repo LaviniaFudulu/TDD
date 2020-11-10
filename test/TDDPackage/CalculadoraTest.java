@@ -31,6 +31,11 @@ public class CalculadoraTest {
     {
         assertEquals(8,Calculadora.suma(5,3));
     }
+    @Test
+    public void testFallaSuma() {
+        
+        assertEquals(8,Calculadora.suma(5,5));
+    }
     
     @Test
     public void testResta()

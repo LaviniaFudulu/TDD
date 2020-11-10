@@ -9,12 +9,12 @@ public class Calculadora {
      */
     public static int suma(int a, int b)
     {
-        return 8;
+        return a+b;
     }
     
     public static int resta(int a, int b)
     {
-        return 0;
+        return a-b;
     }
 
 }
