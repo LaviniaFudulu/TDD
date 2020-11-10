@@ -4,40 +4,38 @@ package TDDPackage;
 import TDDPackage.Calculadora;
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertNotSame;
-/*import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;*/
+import org.junit.AfterClass;
+import static org.junit.Assert.assertEquals;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
 
 
 
 public class CalculadoraTest {
+   
     
-    public CalculadoraTest() {
+   public CalculadoraTest() {
     }
-  /*  
-    @BeforeAll
+    
+    @BeforeClass
     public static void setUpClass() {
     }
     
-    @AfterAll
+    @AfterClass
     public static void tearDownClass() {
-    }*/
-
-    public void testSuma() {
-        int total = 8;
-        int sum = Calculadora.suma (5, 3);
-        assertEquals(sum, total);
     }
-    public void testFallaSuma() {
-        int total = 9;
-        int sum = Calculadora.suma(5, 3);
-        assertNotSame(sum, total);
+    
+    @Test
+    public void testSuma()
+    {
+        assertEquals(8,Calculadora.suma(5,3));
     }
-    public void testResta() {
-        int total = 0;
-        int sub = Calculadora.resta(4, 4);
-        assertEquals(sub, total);
+    
+    @Test
+    public void testResta()
+    {
+        assertEquals(0,Calculadora.resta(4,4));
     }
 
 }

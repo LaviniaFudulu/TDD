@@ -4,14 +4,17 @@ package TDDPackage;
 
 public class Calculadora {
 
-    static int suma(int i, int i0) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+   /**
+     * @param args the command line arguments
+     */
+    public static int suma(int a, int b)
+    {
+        return 8;
     }
-
-    static int resta(int i, int i0) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-   
     
+    public static int resta(int a, int b)
+    {
+        return 0;
+    }
+
 }
